@@ -33,33 +33,92 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
 
+              Column(children: [Text("174"), Text("Posts")]),
+              Column(children: [Text("700k"), Text("Follower")]),
               Column(
                 children: [
-                  Text("174"),
-                  Text("Posts"),
+                  Text(
+                    "700",
+                    style: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 21,
+                      color: Colors.red,
+                    ),
+                  ),
+                  Text("Following"),
                 ],
               ),
-              Column(
-                children: [
-                  Text("700k"),
-                  Text("Follower")
-                ],
-              ),
-              Column(
-                children: [
-                  Text("700",style: TextStyle(
-                    fontStyle: FontStyle.italic,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 21,
-                    color: Colors.red
-                  ),),
-                  Text("Following")
-                ],
-              ),
-
             ],
           ),
-
+          Row(
+            children: [
+              Expanded(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    // action
+                  },
+                  child: Text("Follow"),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    // action
+                  },
+                  child: Text("Message"),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    // action
+                  },
+                  child: Text("Email"),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    // action
+                  },
+                  child: Icon(Icons.keyboard_arrow_down),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
       // bottomNavigationBar: ,
