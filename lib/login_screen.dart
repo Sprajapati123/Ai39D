@@ -41,8 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ],
             ),
-
-
+            SizedBox(height: 20,),
             TextFormField(
               controller: emailController,
               decoration: InputDecoration(
@@ -89,11 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 fillColor: Colors.grey.shade200,
               ),
             ),
-
-
-
             TextButton(onPressed: (){}, child: Text("Forget password"),),
-
             SizedBox(
               height: 50,
               width: double.infinity,
@@ -104,8 +99,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   onPressed: (){}, child: Text("Sign In")),
             )
-
-
           ],
         ),
       ),

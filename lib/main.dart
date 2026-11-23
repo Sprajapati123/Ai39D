@@ -1,4 +1,5 @@
 import 'package:ai39d/card_screen.dart';
+import 'package:ai39d/dashboard_screen.dart';
 import 'package:ai39d/login_screen.dart';
 import 'package:ai39d/profile_screen.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white
         )
       ),
-      home: LoginScreen(),
+      home: DashboardScreen(),
     );
   }
 }
