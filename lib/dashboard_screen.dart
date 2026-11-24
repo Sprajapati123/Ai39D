@@ -39,6 +39,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       ),
 
       body: PageView(
+        physics: NeverScrollableScrollPhysics(),
         controller: controller,
         scrollDirection: Axis.horizontal,
         children: [

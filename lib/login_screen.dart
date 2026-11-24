@@ -1,4 +1,5 @@
 import 'package:ai39d/constants/app_images.dart';
+import 'package:ai39d/registration_screen.dart';
 import 'package:ai39d/widgets/social_media_card.dart';
 import 'package:flutter/material.dart';
 
@@ -30,18 +31,18 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 100),
 
             // Text("Email"),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Row(
               children: [
                 Expanded(
-                  child: SocialMediaCard(label: "Facebook",image: fbImage,)
+                  child: SocialMediaCard(label: "Facebook", image: fbImage),
                 ),
                 Expanded(
-                  child: SocialMediaCard(label: "Google",image: googleImage,)
+                  child: SocialMediaCard(label: "Google", image: googleImage),
                 ),
               ],
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 20),
             TextFormField(
               controller: emailController,
               decoration: InputDecoration(
@@ -88,17 +89,33 @@ class _LoginScreenState extends State<LoginScreen> {
                 fillColor: Colors.grey.shade200,
               ),
             ),
-            TextButton(onPressed: (){}, child: Text("Forget password"),),
+            TextButton(onPressed: () {}, child: Text("Forget password")),
             SizedBox(
               height: 50,
               width: double.infinity,
               child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    foregroundColor: Colors.white
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white,
+                ),
+                onPressed: () {},
+                child: Text("Sign In"),
+              ),
+            ),
+
+            TextButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context)
+                    => RegistrationScreen(
+                        name: "sandis"),
                   ),
-                  onPressed: (){}, child: Text("Sign In")),
-            )
+                );
+              },
+              child: Text("Don't have an account? Sign UP"),
+            ),
           ],
         ),
       ),

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white
         )
       ),
-      home: DashboardScreen(),
+      home: LoginScreen(),
     );
   }
 }
